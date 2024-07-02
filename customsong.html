@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Custom music for Blob Opera</title>
+        <link href="./bootstrap.min.css" rel="stylesheet" />
+        <script src="./files/app.js"></script>
+        <link href="./fonts/fonts.css" rel="stylesheet" />
+        <style>
+            body {
+                background: none !important;
+                background-color: var(--bs-body-bg);
+                overflow: auto;
+                font-family: Inter, var(--bs-body-font-family);
+                font-size: var(--bs-body-font-size);
+                font-weight: var(--bs-body-font-weight);
+                line-height: var(--bs-body-line-height);
+                color: var(--bs-body-color);
+            }
+            .toggle-mode {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 20px;
+            }
+            .links-section {
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="toggle-mode">
+                <button class="btn btn-outline-primary" id="toggle-light">Light</button>
+                <button class="btn btn-outline-secondary mx-2" id="toggle-dark">Dark</button>
+                <button class="btn btn-outline-success" id="toggle-auto">Auto</button>
+            </div>
+            <h1 class="h1 mb-4">Custom music for Blob Opera</h1>
+            <div class="mb-3">
+                <label for="fileInput" class="form-label">Upload JSON File:</label>
+                <input type="file" id="fileInput" class="form-control" accept=".json" />
+            </div>
+            <button onclick="uploadAndStore()" class="btn btn-primary mb-4">Upload and Store</button>
+            <p>
+                Need help? Convert your MIDI with
+                <a href="https://github.com/OverlappingElvis/blob-opera-midi">blob-opera-midi</a>.
+            </p>
+            <a href="./index.html">Go back to Blob Opera</a>
+            <p class="fw-bold mt-4">Saved song(s)</p>
+            <ul id="entriesList" class="list-group mt-3"></ul>
+        </div>
+
+        <script src="./bootstrap.bundle.min.js"></script>
+
+        <script>
+            async function uploadAndStore() {
+                const fileInput = document.getElementById("fileInput");
+                const file = fileInput.files[0];
+                if (!file) {
+                    alert("Please select a JSON file.");
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = async function (event) {
+                    try {
+                        const jsonObject = JSON.parse(event.target.result);
+                        const binaryData = Bt.RecordingMessage.encode(jsonObject).finish();
+                        const dateNow = new Date().toISOString();
+                        await saveToIndexedDB(binaryData, dateNow);
+                        alert("Data encoded and stored successfully.");
+                        loadEntries(); // Refresh the list of entries
+                    } catch (error) {
+                        alert("Failed to process file. Error: " + error.message);
+                        console.error(error);
+                    }
+                };
+                reader.readAsText(file);
+            }
+
+            function openIndexedDB() {
+                return new Promise((resolve, reject) => {
+                    const request = indexedDB.open("RecordingsDB", 1);
+                    request.onerror = (event) => reject("IndexedDB error: " + event.target.errorCode);
+                    request.onupgradeneeded = (event) => {
+                        const db = event.target.result;
+                        if (!db.objectStoreNames.contains("recordings")) {
+                            db.createObjectStore("recordings", { keyPath: "id" });
+                        }
+                    };
+                    request.onsuccess = (event) => resolve(event.target.result);
+                });
+            }
+
+            async function saveToIndexedDB(binaryData, dateNow) {
+                const db = await openIndexedDB();
+                const transaction = db.transaction(["recordings"], "readwrite");
+                const store = transaction.objectStore("recordings");
+                const id = Date.now() + "-" + Math.random().toString(36).substring(2, 10);
+                const request = store.put({ id: id, data: binaryData, date: dateNow });
+                request.onsuccess = () => {
+                    loadEntries(); // Refresh the list of entries immediately after storing new data
+                };
+                request.onerror = (event) => {
+                    alert("Error saving recording to IndexedDB: " + event.target.errorCode);
+                };
+            }
+
+            async function loadEntries() {
+                const db = await openIndexedDB();
+                const transaction = db.transaction(["recordings"], "readonly");
+                const store = transaction.objectStore("recordings");
+                const request = store.getAll();
+                request.onsuccess = () => {
+                    const entriesList = document.getElementById("entriesList");
+                    entriesList.innerHTML = ""; // Clear existing entries
+                    if (request.result.length === 0) {
+                        entriesList.innerHTML = "[empty]";
+                    } else
+                        request.result.forEach((entry) => {
+                            const li = document.createElement("li");
+                            li.className = "list-group-item";
+                            const date = new Date(entry.date).toLocaleDateString("en-US", {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                                hour: "2-digit",
+                                minute: "2-digit",
+                                second: "2-digit",
+                                hour12: false,
+                            });
+                            const link = `./index.html#/r/${entry.id}`;
+                            li.innerHTML = `
+                        <div class="row">
+                        <div class="col-6"><a href="${link}">${
+                                entry.name || entry.id
+                            }</a><button class="btn btn-info btn-sm ms-2" onclick="promptRename('${entry.id}', '${
+                                entry.id
+                            }')">Rename</button></div>
+                        <div class="col-5">${date}</div>
+                        <div class="col-lg-1"><button class="btn btn-danger btn-sm" onclick="confirmDelete('${
+                            entry.id
+                        }')">Delete</button></div>
+                        `;
+                            entriesList.appendChild(li);
+                        });
+                };
+                request.onerror = (event) => {
+                    console.error("Error fetching entries from IndexedDB:", event.target.errorCode);
+                };
+            }
+
+            function confirmDelete(id) {
+                if (confirm("Are you sure?")) {
+                    deleteEntry(id);
+                }
+            }
+
+            async function deleteEntry(id) {
+                const db = await openIndexedDB();
+                const transaction = db.transaction(["recordings"], "readwrite");
+                const store = transaction.objectStore("recordings");
+                const request = store.delete(id);
+
+                request.onsuccess = () => {
+                    loadEntries(); // Refresh the list after deletion
+                    alert("Entry deleted successfully");
+                };
+                request.onerror = (event) => {
+                    alert("Error deleting entry: " + event.target.errorCode);
+                };
+            }
+
+            function promptRename(oldId, currentName) {
+                const newName = prompt("Enter new name for the recording:", currentName);
+                if (newName !== null && newName !== "" && newName !== currentName) {
+                    renameEntry(oldId, newName);
+                }
+            }
+
+            async function renameEntry(oldId, newName) {
+                const db = await openIndexedDB();
+                const transaction = db.transaction(["recordings"], "readwrite");
+                const store = transaction.objectStore("recordings");
+                const getData = store.get(oldId);
+
+                getData.onsuccess = () => {
+                    const data = getData.result;
+                    if (data) {
+                        // Update the name property within the data object
+                        data.name = newName;
+
+                        // Re-save the updated object under the same ID
+                        const updateRequest = store.put(data);
+                        updateRequest.onsuccess = () => {
+                            alert("Rename successful.");
+                            loadEntries(); // Reload the list to show the updated name
+                        };
+                        updateRequest.onerror = (event) => {
+                            alert("Failed to update data: " + event.target.errorCode);
+                        };
+                    } else {
+                        alert("Record not found.");
+                    }
+                };
+                getData.onerror = (event) => {
+                    alert("Failed to retrieve data for renaming: " + event.target.errorCode);
+                };
+            }
+
+            // Load entries on page load
+            window.onload = loadEntries;
+
+            document.getElementById("toggle-light").addEventListener("click", function () {
+                document.documentElement.setAttribute("data-bs-theme", "light");
+            });
+
+            document.getElementById("toggle-dark").addEventListener("click", function () {
+                document.documentElement.setAttribute("data-bs-theme", "dark");
+            });
+
+            document.getElementById("toggle-auto").addEventListener("click", function () {
+                document.documentElement.setAttribute("data-bs-theme", "auto");
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                if (prefersDarkScheme) {
+                    document.documentElement.setAttribute("data-bs-theme", "dark");
+                } else {
+                    document.documentElement.setAttribute("data-bs-theme", "light");
+                }
+            });
+
+            // Initialize based on the user's system preference
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (prefersDarkScheme) {
+                document.documentElement.setAttribute("data-bs-theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data-bs-theme", "light");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+name: Build and Release
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                os: [ubuntu-latest, macos-latest, windows-latest]
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "latest" # Use latest Node.js version
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build Electron app
+              run: npm run build
+              env:
+                  CSC_IDENTITY_AUTO_DISCOVERY: false
+
+            - name: Upload Artifacts
+              uses: actions/upload-artifact@v2
+              with:
+                  name: electron-app-${{ matrix.os }}
+                  path: dist/*
+
+    release:
+        runs-on: ubuntu-latest
+        needs: build
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Download build artifacts
+              uses: actions/download-artifact@v2
+              with:
+                  name: electron-app-ubuntu-latest
+                  path: ./release/linux
+            - uses: actions/download-artifact@v2
+              with:
+                  name: electron-app-macos-latest
+                  path: ./release/macos
+            - uses: actions/download-artifact@v2
+              with:
+                  name: electron-app-windows-latest
+                  path: ./release/windows
+
+            - name: Get latest tag
+              id: get_tag
+              run: |
+                  latest_tag=$(git tag | sort -V | tail -n 1)
+                  if [ -z "$latest_tag" ]; then
+                    new_tag="1.0.0"
+                  else
+                    new_tag=$(echo $latest_tag | awk -F. -v OFS=. '{$NF += 1 ; print}')
+                  fi
+                  echo "latest_tag=$new_tag" >> $GITHUB_ENV
+
+            - name: Create tag
+              run: |
+                  git tag ${{ env.latest_tag }}
+                  git push origin ${{ env.latest_tag }}
+
+            - name: Create GitHub Release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: ${{ env.latest_tag }}
+                  release_name: Release ${{ env.latest_tag }}
+                  body: |
+                      Release ${{ env.latest_tag }} of the project.
+                  draft: false
+                  prerelease: false
+
+            - name: Upload Linux Release Asset
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./release/linux/*.AppImage
+                  asset_name: linux.AppImage
+                  asset_content_type: application/octet-stream
+
+            - name: Upload macOS Release Asset
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./release/macos/*.dmg
+                  asset_name: macos.dmg
+                  asset_content_type: application/octet-stream
+
+            - name: Upload Windows Release Asset
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./release/windows/*.exe
+                  asset_name: windows.exe
+                  asset_content_type: application/octet-stream
+
+    deploy:
+        runs-on: ubuntu-latest
+        needs: build
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "latest" # Use latest Node.js version
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build static site
+              run: |
+                  npm run build:site
+                  touch public/.nojekyll
+
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./public

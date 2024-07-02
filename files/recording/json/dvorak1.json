@@ -1,0 +1,3208 @@
+{
+    "parts": [
+        {
+            "notes": [
+                {
+                    "timeSeconds": 0,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 1.40625,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 1.875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 3.75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 5.15625,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "f",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 5.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 7.5,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 8.90625,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 9.375,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 10.78125,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 11.25,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 15,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 16.40625,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 16.875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 18.75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 20.15625,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 20.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "g",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 22.5,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 23.4375,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "n",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 24.375,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 25.78125,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 26.25,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 30,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 31.40625,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 31.875,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 33.75,
+                    "midiPitch": 68,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "qu",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 34.6875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 35.625,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "g",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 37.5,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 38.4375,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 39.375,
+                    "midiPitch": 68,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 40.3125,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 41.25,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 45,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 46.40625,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 46.875,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 48.75,
+                    "midiPitch": 68,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 49.6875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 50.625,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 52.5,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 53.4375,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 54.375,
+                    "midiPitch": 68,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 55.3125,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 56.25,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 60,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 61.40625,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 61.875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 63.75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 64.6875,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 65.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 67.5,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 68.90625,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 69.375,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 70.78125,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 71.25,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 76.40625,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 76.875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 78.75,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 80.15625,
+                    "midiPitch": 71,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 80.625,
+                    "midiPitch": 73,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 82.5,
+                    "midiPitch": 71,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 83.90625,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 84.375,
+                    "midiPitch": 71,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "n",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 85.3125,
+                    "midiPitch": 66,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 86.25,
+                    "midiPitch": 69,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                }
+            ],
+            "startSuffix": [
+                {
+                    "name": "t",
+                    "duration": 0.10000000149011612
+                }
+            ]
+        },
+        {
+            "notes": [
+                {
+                    "timeSeconds": 0,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 1.40625,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 1.875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 3.75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 5.15625,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "f",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 5.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 7.5,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 8.90625,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 9.375,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 10.78125,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 11.25,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 15,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 16.40625,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 16.875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 18.75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 20.15625,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 20.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "g",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 22.5,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 23.4375,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "n",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 24.375,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 25.78125,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 26.25,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 30,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 31.40625,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 31.875,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 33.75,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "qu",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 34.6875,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 35.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "g",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 37.5,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 38.4375,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 39.375,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 40.3125,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 41.25,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 45,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 46.40625,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 46.875,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 48.75,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 49.6875,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 50.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 52.5,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 53.4375,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 54.375,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 55.3125,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 56.25,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 60,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 61.40625,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 61.875,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 63.75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 65.15625,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 65.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 67.5,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 68.90625,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 69.375,
+                    "midiPitch": 64,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 70.3125,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 71.25,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 75,
+                    "midiPitch": 61,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 78.75,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 82.5,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 84.375,
+                    "midiPitch": 59,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "n",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 86.25,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                }
+            ],
+            "startSuffix": [
+                {
+                    "name": "t",
+                    "duration": 0.10000000149011612
+                }
+            ]
+        },
+        {
+            "notes": [
+                {
+                    "timeSeconds": 0,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 3.75,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 7.5,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 11.25,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 15,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 18.75,
+                    "midiPitch": 53,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 22.5,
+                    "midiPitch": 54,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 24.375,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 26.25,
+                    "midiPitch": 49,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 30,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 33.75,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "qu",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 35.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "g",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 37.5,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 39.375,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 41.25,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 45,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 48.75,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 50.625,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 52.5,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 54.375,
+                    "midiPitch": 56,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 56.25,
+                    "midiPitch": 57,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 60,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 63.75,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 67.5,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 71.25,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 75,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 78.75,
+                    "midiPitch": 53,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 82.5,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 84.375,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "n",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 86.25,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                }
+            ],
+            "startSuffix": [
+                {
+                    "name": "t",
+                    "duration": 0.10000000149011612
+                }
+            ]
+        },
+        {
+            "notes": [
+                {
+                    "timeSeconds": 0,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 3.75,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 7.5,
+                    "midiPitch": 44,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "s",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 11.25,
+                    "midiPitch": 44,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 15,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 18.75,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "m",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 22.5,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 24.375,
+                    "midiPitch": 40,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "j",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 26.25,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 30,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 33.75,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "qu",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 35.625,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "g",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 37.5,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "t",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 39.375,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 41.25,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "c",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 45,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 48.75,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 50.625,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 52.5,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 54.375,
+                    "midiPitch": 52,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "r",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "e",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 56.25,
+                    "midiPitch": 50,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "v",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 60,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "p",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "u",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 63.75,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 67.5,
+                    "midiPitch": 44,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "ch",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 71.25,
+                    "midiPitch": 44,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "d",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 75,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "b",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "i",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 78.75,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 82.5,
+                    "midiPitch": 42,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "l",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "o",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 84.375,
+                    "midiPitch": 44,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "n",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                },
+                {
+                    "timeSeconds": 86.25,
+                    "midiPitch": 45,
+                    "librettoChunk": {
+                        "suffix": [
+                            {
+                                "name": "h",
+                                "duration": 0.10000000149011612
+                            }
+                        ],
+                        "vowel": {
+                            "name": "a",
+                            "duration": 0.20000000298023224
+                        }
+                    },
+                    "controlled": false
+                }
+            ],
+            "startSuffix": [
+                {
+                    "name": "t",
+                    "duration": 0.10000000149011612
+                }
+            ]
+        }
+    ],
+    "theme": "Normal",
+    "location": "NewYork"
+}

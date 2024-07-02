@@ -1,0 +1,25 @@
+{
+    "name": "blob-opera-enhanced",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "devDependencies": {
+        "electron": "^31.1.0",
+        "electron-builder": "^latest"
+    },
+    "build": {
+        "appId": "page.yell0wsuit.bloboperaenhanced",
+        "mac": {
+            "target": "dmg"
+        },
+        "win": {
+            "target": "nsis"
+        },
+        "linux": {
+            "target": "AppImage"
+        }
+    }
+}
