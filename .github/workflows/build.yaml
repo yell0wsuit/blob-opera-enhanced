@@ -20,7 +20,7 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@v2
               with:
-                  node-version: "latest" # Use latest Node.js version
+                  node-version: "20" # Use latest Node.js version
 
             - name: Install dependencies
               run: npm install
@@ -128,7 +128,7 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@v2
               with:
-                  node-version: "latest" # Use latest Node.js version
+                  node-version: "20" # Use latest Node.js version
 
             - name: Install dependencies
               run: npm install
