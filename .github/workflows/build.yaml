@@ -71,6 +71,8 @@ jobs:
 
             - name: Create tag
               run: |
+                  git config --global user.email "github-actions@github.com"
+                  git config --global user.name "github-actions"
                   git tag ${{ env.latest_tag }}
                   git push origin ${{ env.latest_tag }}
 
