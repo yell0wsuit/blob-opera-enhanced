@@ -63,16 +63,14 @@ jobs:
               run: |
                   latest_tag=$(git tag | sort -V | tail -n 1)
                   if [ -z "$latest_tag" ]; then
-                    new_tag="1.0.0"
+                    new_tag="1.0"
                   else
-                    new_tag=$(echo $latest_tag | awk -F. -v OFS=. '{$NF += 1 ; print}')
+                    new_tag=$(( ${latest_tag%.*} + 1 )).0
                   fi
                   echo "latest_tag=$new_tag" >> $GITHUB_ENV
 
             - name: Create tag
               run: |
-                  git config --global user.email "github-actions@github.com"
-                  git config --global user.name "github-actions"
                   git tag ${{ env.latest_tag }}
                   git push origin ${{ env.latest_tag }}
 
