@@ -8,7 +8,7 @@
     },
     "devDependencies": {
         "electron": "^31.1.0",
-        "electron-builder": "^latest"
+        "electron-builder": "latest"
     },
     "build": {
         "appId": "page.yell0wsuit.bloboperaenhanced",
