@@ -3,6 +3,7 @@
     "description": "An enhanced version of Google's Blob Opera by yell0wsuit.",
     "author": {"name": "yell0wsuit", "url": "http://github.com/yell0wsuit"},
     "version": "1.0.0",
+    "license": "GPL-3.0",
     "main": "main.js",
     "scripts": {
         "start": "electron-forge start",
