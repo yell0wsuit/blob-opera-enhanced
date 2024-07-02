@@ -76,7 +76,7 @@ jobs:
                   git tag ${{ env.latest_tag }}
                   git push origin ${{ env.latest_tag }}
 
-            - name: Create GitHub Release
+            - name: Create GitHub release
               id: create_release
               uses: actions/create-release@v1
               env:
