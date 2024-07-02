@@ -3,23 +3,23 @@
     "version": "1.0.0",
     "main": "main.js",
     "scripts": {
-        "start": "electron .",
-        "build": "electron-builder"
+        "start": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "publish": "electron-forge publish",
+        "lint": "eslint src"
     },
     "devDependencies": {
-        "electron": "^31.1.0",
-        "electron-builder": "latest"
+        "electron": "^latest",
+        "@electron-forge/cli": "^latest",
+        "@electron-forge/maker-deb": "^latest",
+        "@electron-forge/maker-rpm": "^latest",
+        "@electron-forge/maker-squirrel": "^latest",
+        "@electron-forge/maker-zip": "^latest",
+        "@electron-forge/maker-dmg": "^latest",
+        "eslint": "^latest"
     },
-    "build": {
-        "appId": "page.yell0wsuit.bloboperaenhanced",
-        "mac": {
-            "target": "dmg"
-        },
-        "win": {
-            "target": "nsis"
-        },
-        "linux": {
-            "target": "AppImage"
-        }
+    "config": {
+        "forge": "./forge.config.js"
     }
 }
