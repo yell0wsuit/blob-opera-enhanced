@@ -1,5 +1,7 @@
 {
     "name": "blob-opera-enhanced",
+    "description": "An enhanced version of Google's Blob Opera by yell0wsuit.",
+    "author": {"name": "yell0wsuit", "url": "http://github.com/yell0wsuit"},
     "version": "1.0.0",
     "main": "main.js",
     "scripts": {
