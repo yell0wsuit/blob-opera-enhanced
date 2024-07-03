@@ -22,15 +22,23 @@ jobs:
               with:
                   node-version: "20" # Use the latest Node.js version
 
-            - name: Install Python setuptools (macOS only)
+            - name: Set up Python (macOS only)
+              if: matrix.os == 'macos-latest'
+              uses: actions/setup-python@main
+              with:
+                  python-version: "3.12"
+
+            - name: Install Python virtual environment (macOS only)
               if: matrix.os == 'macos-latest'
               run: |
-                  python3 -m ensurepip --upgrade
-                  python3 -m pip install --upgrade setuptools
+                  python3 -m venv venv
+                  source venv/bin/activate
+                  pip install --upgrade pip setuptools
 
             - name: Install dependencies
               run: |
                   if [[ "${{ matrix.os }}" == "macos-latest" ]]; then
+                    source venv/bin/activate
                     npm install appdmg --save-dev
                   fi
                   npm install
