@@ -7,11 +7,11 @@ on:
 
 jobs:
     build:
-        runs-on: ubuntu-latest
-
         strategy:
             matrix:
                 os: [ubuntu-latest, macos-latest, windows-latest]
+
+        runs-on: ${{ matrix.os }}
 
         steps:
             - name: Checkout code
@@ -20,7 +20,7 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@main
               with:
-                  node-version: "20" # Use latest Node.js version
+                  node-version: "20" # Use the latest Node.js version
 
             - name: Install dependencies
               run: npm install
@@ -46,16 +46,20 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Download build artifacts
+            - name: Download build artifacts for Linux
               uses: actions/download-artifact@main
               with:
                   name: electron-app-ubuntu-latest
                   path: ./release/linux
-            - uses: actions/download-artifact@main
+
+            - name: Download build artifacts for macOS
+              uses: actions/download-artifact@main
               with:
                   name: electron-app-macos-latest
                   path: ./release/macos
-            - uses: actions/download-artifact@main
+
+            - name: Download build artifacts for Windows
+              uses: actions/download-artifact@main
               with:
                   name: electron-app-windows-latest
                   path: ./release/windows
@@ -98,6 +102,26 @@ jobs:
                   asset_path: ./release/linux/*.AppImage
                   asset_name: linux.AppImage
                   asset_content_type: application/octet-stream
+            
+            - name: Upload Linux Release Asset (RPM)
+              uses: actions/upload-release-asset@main
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./release/linux/*.rpm
+                  asset_name: linux.rpm
+                  asset_content_type: application/octet-stream
+
+            - name: Upload Linux Release Asset (DEB)
+              uses: actions/upload-release-asset@main
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./release/linux/*.deb
+                  asset_name: linux.deb
+                  asset_content_type: application/octet-stream
 
             - name: Upload macOS Release Asset
               uses: actions/upload-release-asset@main
@@ -119,12 +143,22 @@ jobs:
                   asset_name: windows.exe
                   asset_content_type: application/octet-stream
 
+            - name: Upload ZIP Release Asset
+              uses: actions/upload-release-asset@main
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./release/zip/*.zip
+                  asset_name: app-blob-opera.zip
+                  asset_content_type: application/x-zip
+
     deploy:
         runs-on: ubuntu-latest
         needs: build
         environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
 
         steps:
             - name: Checkout code
@@ -132,11 +166,13 @@ jobs:
 
             - name: Setup Pages
               uses: actions/configure-pages@main
+
             - name: Upload artifact
               uses: actions/upload-pages-artifact@main
               with:
-              # Upload entire repository
-                path: '.'
+                  # Upload entire repository
+                  path: " . "
+
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@main
