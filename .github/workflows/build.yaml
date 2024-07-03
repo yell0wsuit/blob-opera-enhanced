@@ -129,7 +129,7 @@ jobs:
 
             - name: Upload Linux Release Asset
               run: |
-                  for file in ./release/linux/*; do
+                  for file in ./release/linux/*.*; do
                     [ -e "$file" ] || continue
                     echo "Uploading $file"
                     gh release upload ${{ env.latest_tag }} "$file" --clobber
@@ -139,7 +139,7 @@ jobs:
 
             - name: Upload macOS Release Asset
               run: |
-                  for file in ./release/macos/*; do
+                  for file in ./release/macos/*.*; do
                     [ -e "$file" ] || continue
                     echo "Uploading $file"
                     gh release upload ${{ env.latest_tag }} "$file" --clobber
@@ -149,7 +149,7 @@ jobs:
 
             - name: Upload Windows Release Asset
               run: |
-                  for file in ./release/windows/*; do
+                  for file in ./release/windows/*.*; do
                     [ -e "$file" ] || continue
                     echo "Uploading $file"
                     gh release upload ${{ env.latest_tag }} "$file" --clobber
