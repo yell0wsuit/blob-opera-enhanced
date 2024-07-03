@@ -20,7 +20,8 @@
         "@electron-forge/maker-squirrel": "latest",
         "@electron-forge/maker-zip": "latest",
         "@electron-forge/maker-dmg": "latest",
-        "eslint": "latest"
+        "eslint": "latest",
+        "appdmg": "latest"
     },
     "config": {
         "forge": "./forge.config.js"
