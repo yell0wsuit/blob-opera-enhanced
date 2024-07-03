@@ -1,13 +1,13 @@
 module.exports = {
     packagerConfig: {
-        icon: "./icons/appicon",
+        icon: "./app/icons/appicon",
     },
     makers: [
         /*{
             name: "@electron-forge/maker-squirrel",
             config: {
                 name: "BlobOpera",
-                setupIcon: "./icons/appicon.ico", // Specific for Squirrel.Windows
+                setupIcon: "./app/icons/appicon.ico", // Specific for Squirrel.Windows
             },
         },*/
         {
@@ -17,19 +17,19 @@ module.exports = {
         {
             name: "@electron-forge/maker-dmg",
             config: {
-                icon: "./icons/appicon-macos.icns", // macOS specific icon
+                icon: "./app/icons/appicon-macos.icns", // macOS specific icon
             },
         },
         {
             name: "@electron-forge/maker-deb",
             config: {
-                icon: "./icons/appicon-linux.png", // Linux specific icon for deb
+                icon: "./app/icons/appicon-linux.png", // Linux specific icon for deb
             },
         },
         {
             name: "@electron-forge/maker-rpm",
             config: {
-                icon: "./icons/appicon-linux.png", // Linux specific icon for rpm
+                icon: "./app/icons/appicon-linux.png", // Linux specific icon for rpm
             },
         },
     ],

@@ -5,7 +5,7 @@ let splashWin;
 
 const iconPath = path.join(
     __dirname,
-    "icons",
+    "app", "icons",
     process.platform === "win32"
         ? "appicon.ico"
         : process.platform === "darwin"
@@ -26,7 +26,7 @@ function createWindow() {
         },
     });
 
-    mainWindow.loadFile(path.join(__dirname, "index.html"));
+    mainWindow.loadFile(path.join(__dirname, "app", "index.html"));
 
     // Event listener for toggling menu bar visibility when in full-screen mode
     mainWindow.on("enter-full-screen", () => {
@@ -58,7 +58,7 @@ function createWindow() {
                 {
                     label: "Manage custom songs...",
                     click: () => {
-                        mainWindow.loadFile(path.join(__dirname, "customsong.html"));
+                        mainWindow.loadFile(path.join(__dirname, "app", "customsong.html"));
                     },
                 },
                 { type: "separator" },
@@ -127,7 +127,7 @@ function createSplashWindow() {
         icon: iconPath,
     });
 
-    splashWin.loadFile(path.join(__dirname, "splash.html"));
+    splashWin.loadFile(path.join(__dirname, "app", "splash.html"));
     splashWin.on("closed", () => (splashWin = null));
 }
 
