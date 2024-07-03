@@ -35,13 +35,5 @@ module.exports = {
                 icon: "./icons/appicon-linux.png", // Linux specific icon for rpm
             },
         },
-        {
-            name: "@electron-forge/maker-appimage",
-            config: {
-                options: {
-                    icon: "./icons/appicon-linux.png", // Linux specific icon base path
-                },
-            },
-        },
     ],
 };

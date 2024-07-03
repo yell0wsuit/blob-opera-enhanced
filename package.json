@@ -20,7 +20,6 @@
         "@electron-forge/maker-squirrel": "latest",
         "@electron-forge/maker-zip": "latest",
         "@electron-forge/maker-dmg": "latest",
-        "@electron-forge/maker-appimage": "latest",
         "eslint": "latest"
     },
     "config": {
