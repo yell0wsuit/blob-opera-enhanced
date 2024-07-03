@@ -13,6 +13,13 @@ Create your own ML-powered opera song! Created by David Li with Google Arts & Cu
 
 [^1]: The JSON format must be specific to Blob Opera. Use tools such as [blob-opera-mini](https://github.com/OverlappingElvis/blob-opera-midi) to convert MIDI to Blob Opera format.
 
+## Play
+
+- Online version: <https://yell0wsuit.github.io/blob-opera-enhanced/>
+- Offline version: <https://github.com/yell0wsuit/blob-opera-enhanced/releases/latest>
+  - Choose the correct version to your operating system in the "Assets" section.  
+    For Windows, look for ``win32-x64`` with <kbd>Ctrl</kbd>+<kbd>F</kbd>.
+
 ## Screenshots
 
 ![Main page](./screenshots/main.webp)
