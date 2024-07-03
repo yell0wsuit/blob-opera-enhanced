@@ -12,7 +12,7 @@ module.exports = {
         },
         {
             name: "@electron-forge/maker-zip",
-            platforms: ["darwin"],
+            platforms: ["darwin", "linux", "win32"],
         },
         {
             name: "@electron-forge/maker-dmg",
@@ -33,6 +33,14 @@ module.exports = {
             config: {
                 name: "Blob Opera",
                 icon: "./icons/appicon-linux.png", // Linux specific icon for rpm
+            },
+        },
+        {
+            name: "@electron-forge/maker-appimage",
+            config: {
+                options: {
+                    icon: "./icons/appicon-linux.png", // Linux specific icon base path
+                },
             },
         },
     ],
