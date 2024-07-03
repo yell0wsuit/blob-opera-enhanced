@@ -35,15 +35,31 @@ jobs:
                   source venv/bin/activate
                   pip install --upgrade pip setuptools
 
-            - name: Install dependencies
+            - name: Install dependencies (Ubuntu and macOS)
+              if: matrix.os != 'windows-latest'
               run: |
-                  if [[ "${{ matrix.os }}" == "macos-latest" ]]; then
+                  if [ "${{ matrix.os }}" = "macos-latest" ]; then
                     source venv/bin/activate
                     npm install appdmg --save-dev
                   fi
                   npm install
 
-            - name: Build Electron app
+            - name: Install dependencies (Windows)
+              if: matrix.os == 'windows-latest'
+              run: npm install
+
+            - name: Build Electron app (Ubuntu and macOS)
+              if: matrix.os != 'windows-latest'
+              run: |
+                  if [ "${{ matrix.os }}" = "macos-latest" ]; then
+                    source venv/bin/activate
+                  fi
+                  npm run make
+              env:
+                  CSC_IDENTITY_AUTO_DISCOVERY: false
+
+            - name: Build Electron app (Windows)
+              if: matrix.os == 'windows-latest'
               run: npm run make
               env:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
