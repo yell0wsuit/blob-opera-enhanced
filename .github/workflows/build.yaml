@@ -6,6 +6,7 @@ on:
             - main
 
 permissions:
+    pages: write
     id-token: write
 
 jobs:
