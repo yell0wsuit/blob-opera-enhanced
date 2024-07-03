@@ -23,7 +23,11 @@ jobs:
                   node-version: "20" # Use the latest Node.js version
 
             - name: Install dependencies
-              run: npm install
+              run: |
+                  if [[ "${{ matrix.os }}" == "macos-latest" ]]; then
+                    npm install appdmg --save-dev
+                  fi
+                  npm install
 
             - name: Build Electron app
               run: npm run make
@@ -92,7 +96,7 @@ jobs:
                       Release ${{ env.latest_tag }} of the project.
                   draft: false
                   prerelease: false
-            
+
             - name: Upload Linux Release Asset (RPM)
               uses: actions/upload-release-asset@main
               env:
