@@ -67,7 +67,7 @@ jobs:
             - name: Upload Artifacts
               uses: actions/upload-artifact@main
               with:
-                  name: electron-app-${{ matrix.os }}
+                  name: yell0wsuit-blob-opera-${{ matrix.os }}
                   path: out/make/*
 
     release:
@@ -83,19 +83,19 @@ jobs:
             - name: Download build artifacts for Linux
               uses: actions/download-artifact@main
               with:
-                  name: electron-app-ubuntu-latest
+                  name: yell0wsuit-blob-opera-ubuntu-latest
                   path: ./release/linux
 
             - name: Download build artifacts for macOS
               uses: actions/download-artifact@main
               with:
-                  name: electron-app-macos-latest
+                  name: yell0wsuit-blob-opera-macos-latest
                   path: ./release/macos
 
             - name: Download build artifacts for Windows
               uses: actions/download-artifact@main
               with:
-                  name: electron-app-windows-latest
+                  name: yell0wsuit-blob-opera-windows-latest
                   path: ./release/windows
 
             - name: Get latest tag
@@ -127,55 +127,45 @@ jobs:
                   draft: false
                   prerelease: false
 
-            - name: Upload Linux Release Asset (RPM)
-              uses: actions/upload-release-asset@main
+            - name: Upload Linux Release Asset
+              run: |
+                  for file in ./release/linux/*; do
+                    [ -e "$file" ] || continue
+                    echo "Uploading $file"
+                    gh release upload ${{ env.latest_tag }} "$file" --clobber
+                  done
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./release/linux/*.rpm
-                  asset_name: linux.rpm
-                  asset_content_type: application/octet-stream
-
-            - name: Upload Linux Release Asset (DEB)
-              uses: actions/upload-release-asset@main
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./release/linux/*.deb
-                  asset_name: linux.deb
-                  asset_content_type: application/octet-stream
 
             - name: Upload macOS Release Asset
-              uses: actions/upload-release-asset@main
+              run: |
+                  for file in ./release/macos/*; do
+                    [ -e "$file" ] || continue
+                    echo "Uploading $file"
+                    gh release upload ${{ env.latest_tag }} "$file" --clobber
+                  done
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./release/macos/*.dmg
-                  asset_name: macos.dmg
-                  asset_content_type: application/octet-stream
 
             - name: Upload Windows Release Asset
-              uses: actions/upload-release-asset@main
+              run: |
+                  for file in ./release/windows/*; do
+                    [ -e "$file" ] || continue
+                    echo "Uploading $file"
+                    gh release upload ${{ env.latest_tag }} "$file" --clobber
+                  done
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./release/windows/*.exe
-                  asset_name: windows.exe
-                  asset_content_type: application/octet-stream
 
             - name: Upload ZIP Release Asset
-              uses: actions/upload-release-asset@main
+              run: |
+                  for file in ./release/zip/*; do
+                    [ -e "$file" ] || continue
+                    echo "Uploading $file"
+                    gh release upload ${{ env.latest_tag }} "$file" --clobber
+                  done
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./release/zip/*.zip
-                  asset_name: app-blob-opera.zip
-                  asset_content_type: application/x-zip
 
     deploy:
         runs-on: ubuntu-latest

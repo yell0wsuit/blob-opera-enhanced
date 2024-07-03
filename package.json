@@ -20,7 +20,6 @@
         "@electron-forge/cli": "latest",
         "@electron-forge/maker-deb": "latest",
         "@electron-forge/maker-rpm": "latest",
-        "@electron-forge/maker-squirrel": "latest",
         "@electron-forge/maker-zip": "latest",
         "@electron-forge/maker-dmg": "latest",
         "eslint": "latest"

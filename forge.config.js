@@ -3,13 +3,13 @@ module.exports = {
         icon: "./icons/appicon",
     },
     makers: [
-        {
+        /*{
             name: "@electron-forge/maker-squirrel",
             config: {
                 name: "BlobOpera",
                 setupIcon: "./icons/appicon.ico", // Specific for Squirrel.Windows
             },
-        },
+        },*/
         {
             name: "@electron-forge/maker-zip",
             platforms: ["darwin", "linux", "win32"],
