@@ -1,7 +1,10 @@
 {
     "name": "blob-opera-enhanced",
     "description": "An enhanced version of Google's Blob Opera by yell0wsuit.",
-    "author": {"name": "yell0wsuit", "url": "http://github.com/yell0wsuit"},
+    "author": {
+        "name": "yell0wsuit",
+        "url": "http://github.com/yell0wsuit"
+    },
     "version": "1.0.0",
     "license": "GPL-3.0",
     "main": "main.js",
@@ -20,7 +23,9 @@
         "@electron-forge/maker-squirrel": "latest",
         "@electron-forge/maker-zip": "latest",
         "@electron-forge/maker-dmg": "latest",
-        "eslint": "latest",
+        "eslint": "latest"
+    },
+    "optionalDependencies": {
         "appdmg": "latest"
     },
     "config": {
