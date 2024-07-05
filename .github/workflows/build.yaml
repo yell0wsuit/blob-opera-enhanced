@@ -68,6 +68,11 @@ jobs:
                   source venv/bin/activate
                   pip install --upgrade pip setuptools
 
+            - name: Ensure package-lock.json is up to date
+              run: npm install
+              env:
+                  CI: true
+
             - name: Install dependencies (Ubuntu and macOS)
               if: matrix.os != 'windows-latest'
               run: |
