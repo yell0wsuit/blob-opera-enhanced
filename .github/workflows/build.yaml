@@ -50,6 +50,17 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-pip-
 
+            - name: Cache Electron build (all platforms)
+              uses: actions/cache@main
+              with:
+                  path: |
+                    ${{ github.workspace }}/.electron
+                    ${{ github.workspace }}/.cache/electron
+                    ${{ github.workspace }}/.cache/electron-builder
+                  key: ${{ runner.os }}-electron-cache-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                    ${{ runner.os }}-electron-cache-
+
             - name: Install Python virtual environment (macOS only)
               if: matrix.os == 'macos-latest'
               run: |
@@ -64,11 +75,11 @@ jobs:
                     source venv/bin/activate
                     npm install appdmg --save-dev
                   fi
-                  npm install
+                  npm ci
 
             - name: Install dependencies (Windows)
               if: matrix.os == 'windows-latest'
-              run: npm install
+              run: npm ci
 
             - name: Build Electron app (Ubuntu and macOS)
               if: matrix.os != 'windows-latest'
