@@ -64,11 +64,11 @@ jobs:
                     source venv/bin/activate
                     npm install appdmg --save-dev
                   fi
-                  npm ci
+                  npm install
 
             - name: Install dependencies (Windows)
               if: matrix.os == 'windows-latest'
-              run: npm ci
+              run: npm install
 
             - name: Build Electron app (Ubuntu and macOS)
               if: matrix.os != 'windows-latest'
