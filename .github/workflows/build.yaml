@@ -15,6 +15,11 @@ jobs:
         strategy:
             matrix:
                 os: [ubuntu-latest, macos-latest, windows-latest]
+                include:
+                    - os: macos-latest
+                      arch: x64
+                    - os: macos-latest
+                      arch: arm64
 
         runs-on: ${{ matrix.os }}
 
@@ -90,7 +95,7 @@ jobs:
               if: matrix.os == 'macos-latest'
               run: |
                     source venv/bin/activate
-                    npm run make -- --arch="universal"
+                    npm run make -- --arch="${{ matrix.arch }}"
               env:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
 
@@ -122,11 +127,24 @@ jobs:
                   name: yell0wsuit-blob-opera-ubuntu-latest
                   path: ./release/linux
 
-            - name: Download build artifacts for macOS
+            - name: Download build artifacts for macOS (x64)
               uses: actions/download-artifact@main
               with:
-                  name: yell0wsuit-blob-opera-macos-latest
-                  path: ./release/macos
+                  name: yell0wsuit-blob-opera-macos-latest-x64
+                  path: ./release/macos/x64
+
+            - name: Download build artifacts for macOS (arm64)
+              uses: actions/download-artifact@main
+              with:
+                  name: yell0wsuit-blob-opera-macos-latest-arm64
+                  path: ./release/macos/arm64
+
+            - name: Create Universal Binary for macOS
+              run: |
+                  mkdir -p ./release/macos/universal
+                  lipo -create -output ./release/macos/universal/BlobOperaEnhanced.app/Contents/MacOS/BlobOperaEnhanced \
+                    ./release/macos/x64/BlobOperaEnhanced.app/Contents/MacOS/BlobOperaEnhanced \
+                    ./release/macos/arm64/BlobOperaEnhanced.app/Contents/MacOS/BlobOperaEnhanced
 
             - name: Download build artifacts for Windows
               uses: actions/download-artifact@main
