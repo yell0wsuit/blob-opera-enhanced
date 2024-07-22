@@ -126,7 +126,7 @@ jobs:
             - name: Download all build artifacts
               uses: actions/download-artifact@main
               with:
-                  path: ./release
+                  path: ./release/blob-opera-*
 
             - name: Display structure of downloaded files
               run: ls -R
@@ -139,7 +139,7 @@ jobs:
                   if [ -z "$latest_tag" ]; then
                     new_tag="1.0"
                   else
-                    new_tag=$(( ${latest_tag%.*} + 1 )).0
+                    new_tag=$(( ${latest_tag%.*} ))
                   fi
                   echo "latest_tag=$new_tag" >> $GITHUB_ENV
 
