@@ -110,14 +110,14 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: yell0wsuit-blob-opera-${{ matrix.os }}
-                  path: out/make-macos-*/*
+                  path: out/make-*
 
             - name: Upload Artifacts (Windows & Linux)
               if: matrix.os != 'macos-latest'
               uses: actions/upload-artifact@v2
               with:
                   name: yell0wsuit-blob-opera-${{ matrix.os }}
-                  path: out/make/*
+                  path: out/make
 
     release:
         runs-on: ubuntu-latest
