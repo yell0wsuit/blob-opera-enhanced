@@ -150,11 +150,14 @@ jobs:
 
             - name: Create GitHub release
               id: create_release
-              uses: elgohr/Github-Release-Action@main
+              uses: softprops/action-gh-release@main
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  title: ${{ env.latest_tag }}
+                  tag_name: ${{ env.latest_tag }}
+                  name: Release ${{ env.latest_tag }}
+                  body: |
+                      Release ${{ env.latest_tag }} of the project.
 
             - name: Display the release directory structure
               run: ls -R ./release
