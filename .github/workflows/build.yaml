@@ -164,7 +164,7 @@ jobs:
 
             - name: Upload Release Assets
               run: |
-                  for artifact in ./release/*; do
+                  for artifact in ./release/blob-opera-*; do
                     for file in $(find $artifact -type f); do
                       echo "Attempting to upload: $file"
                       if gh release upload ${{ env.latest_tag }} "$file" --clobber; then
