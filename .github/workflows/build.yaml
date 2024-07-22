@@ -139,7 +139,7 @@ jobs:
                   if [ -z "$latest_tag" ]; then
                     new_tag="1.0"
                   else
-                    new_tag=$(( ${latest_tag%.*} ))
+                    new_tag=$(( ${latest_tag%.*} + 1 )).0
                   fi
                   echo "latest_tag=$new_tag" >> $GITHUB_ENV
 
@@ -178,7 +178,7 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     deploy:
-        if: github.event_name == 'push' && github.event.head_commit.message.contains('app/')
+        if: github.event_name == 'push' && github.event.commits.*.modified.contains('app/')
         runs-on: ubuntu-latest
         environment:
             name: github-pages
