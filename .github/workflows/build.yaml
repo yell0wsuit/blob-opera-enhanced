@@ -106,12 +106,12 @@ jobs:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
 
             - name: Upload Artifacts
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@main
               with:
                   name: blob-opera-${{ matrix.os }}
                   path: |
-                    out/make*
-                    out/make-*
+                      out/make*
+                      out/make-*
 
     release:
         runs-on: ubuntu-latest
@@ -123,8 +123,8 @@ jobs:
               with:
                   fetch-depth: 0
 
-             - name: Download all build artifacts
-              uses: actions/download-artifact@v2
+            - name: Download all build artifacts
+              uses: actions/download-artifact@main
               with:
                   path: ./release
 
@@ -163,12 +163,12 @@ jobs:
 
             - name: Upload Release Assets
               run: |
-                for artifact in ./release/*; do
-                  for file in $(find $artifact -type f); do
-                    echo "Uploading $file"
-                    gh release upload v${{ github.run_number }} "$file" --clobber
+                  for artifact in ./release/*; do
+                    for file in $(find $artifact -type f); do
+                      echo "Uploading $file"
+                      gh release upload v${{ github.run_number }} "$file" --clobber
+                    done
                   done
-                done
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
