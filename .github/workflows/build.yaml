@@ -93,6 +93,7 @@ jobs:
               if: matrix.os == 'macos-latest'
               run: |
                   for arch in ${{ join(matrix.arch, ' ') }}; do
+                    source venv/bin/activate
                     npm run make -- --arch=$arch
                     mkdir -p out/make-$arch
                     mv out/make/* out/make-$arch/
