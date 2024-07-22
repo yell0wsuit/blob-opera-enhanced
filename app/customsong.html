@@ -26,7 +26,6 @@
             .links-section {
                 margin-top: 30px;
             }
-
             .bi {
                 width: 1em;
                 height: 1em;
@@ -38,16 +37,16 @@
     <body>
         <div class="container my-5">
             <div class="toggle-mode">
-                <button class="btn btn-outline-primary" id="toggle-light">Light</button>
-                <button class="btn btn-outline-secondary mx-2" id="toggle-dark">Dark</button>
-                <button class="btn btn-outline-success" id="toggle-auto">Auto</button>
+                <button type="button" class="btn btn-outline-primary" id="toggle-light">Light</button>
+                <button type="button" class="btn btn-outline-secondary mx-2" id="toggle-dark">Dark</button>
+                <button type="button" class="btn btn-outline-success" id="toggle-auto">Auto</button>
             </div>
             <h1 class="h1 mb-4">Custom music for Blob Opera</h1>
             <div class="mb-3">
                 <label for="fileInput" class="form-label">Upload JSON File:</label>
                 <input type="file" id="fileInput" class="form-control" accept=".json" />
             </div>
-            <button onclick="uploadAndStore()" class="btn btn-primary mb-4">Upload and store</button>
+            <button type="button" onclick="uploadAndStore()" class="btn btn-primary mb-4">Upload and store</button>
             <p>
                 Need help? Convert your MIDI with
                 <a href="https://github.com/OverlappingElvis/blob-opera-midi">blob-opera-midi</a>.
@@ -82,7 +81,9 @@
                         <!-- Alert message will be injected here -->
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="d-block w-50 btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="d-block w-50 btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
@@ -264,11 +265,11 @@
                         <div class="row">
                         <div class="col-6"><a href="${link}">${
                                 entry.name || entry.id
-                            }</a><button class="btn btn-info btn-sm ms-2" onclick="promptRename('${entry.id}', '${
+                            }</a><button type="button" class="btn btn-info btn-sm ms-2" onclick="promptRename('${entry.id}', '${
                                 entry.name || entry.id
                             }')">Rename</button></div>
                         <div class="col-5">${date}</div>
-                        <div class="col-lg-1"><button class="btn btn-danger btn-sm" onclick="confirmDelete('${
+                        <div class="col-lg-1"><button type="button" class="btn btn-danger btn-sm" onclick="confirmDelete('${
                             entry.id
                         }')">Delete</button></div>
                         `;
