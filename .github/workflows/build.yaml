@@ -128,18 +128,19 @@ jobs:
               with:
                   path: ./release
 
-            - name: Display structure of downloaded files
-              run: ls -R
-              working-directory: ./release
+            - name: Get version from package.json
+              id: get_version
+              run: |
+                  echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
 
             - name: Get latest tag
               id: get_tag
               run: |
                   latest_tag=$(git tag | sort -V | tail -n 1)
                   if [ -z "$latest_tag" ]; then
-                    new_tag="1.0"
+                    new_tag="v${{ env.PACKAGE_VERSION }}"
                   else
-                    new_tag=$(( ${latest_tag%.*} + 1 )).0
+                    new_tag=$(( ${latest_tag%.*} + 0.1 ))
                   fi
                   echo "latest_tag=$new_tag" >> $GITHUB_ENV
 
