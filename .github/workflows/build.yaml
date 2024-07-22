@@ -95,7 +95,7 @@ jobs:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
 
             - name: Build Electron app (Windows & Linux)
-              if: matrix.os !== 'macos-latest'
+              if: matrix.os != 'macos-latest'
               run: npm run make
               env:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
