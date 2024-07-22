@@ -105,19 +105,13 @@ jobs:
               env:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
 
-            - name: Upload Artifacts (macOS)
-              if: matrix.os == 'macos-latest'
+            - name: Upload Artifacts
               uses: actions/upload-artifact@v2
               with:
-                  name: yell0wsuit-blob-opera-${{ matrix.os }}
-                  path: out/make-*
-
-            - name: Upload Artifacts (Windows & Linux)
-              if: matrix.os != 'macos-latest'
-              uses: actions/upload-artifact@v2
-              with:
-                  name: yell0wsuit-blob-opera-${{ matrix.os }}
-                  path: out/make
+                  name: blob-opera-${{ matrix.os }}
+                  path: |
+                    out/make*
+                    out/make-*
 
     release:
         runs-on: ubuntu-latest
@@ -176,30 +170,14 @@ jobs:
                   draft: false
                   prerelease: false
 
-            - name: Upload Linux Release Asset
+            - name: Upload Release Assets
               run: |
-                  for file in $(find ./release/linux -type f); do
+                for artifact in ./release/*; do
+                  for file in $(find $artifact -type f); do
                     echo "Uploading $file"
-                    gh release upload ${{ env.latest_tag }} "$file" --clobber
+                    gh release upload v${{ github.run_number }} "$file" --clobber
                   done
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-            - name: Upload macOS Release Asset
-              run: |
-                  for file in $(find ./release/macos -type f); do
-                    echo "Uploading $file"
-                    gh release upload ${{ env.latest_tag }} "$file" --clobber
-                  done
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-            - name: Upload Windows Release Asset
-              run: |
-                  for file in $(find ./release/windows -type f); do
-                    echo "Uploading $file"
-                    gh release upload ${{ env.latest_tag }} "$file" --clobber
-                  done
+                done
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
