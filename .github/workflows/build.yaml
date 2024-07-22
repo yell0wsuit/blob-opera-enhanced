@@ -150,7 +150,7 @@ jobs:
 
             - name: Create GitHub release
               id: create_release
-              uses: actions/create-release@main
+              uses: elgohr/Github-Release-Action@main
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
@@ -166,7 +166,7 @@ jobs:
                   for artifact in ./release/*; do
                     for file in $(find $artifact -type f); do
                       echo "Attempting to upload: $file"
-                      if gh release upload v${{ github.run_number }} "$file" --clobber; then
+                      if gh release upload v${{ env.latest_tag }} "$file" --clobber; then
                         echo "Successfully uploaded: $file"
                       else
                         echo "Failed to upload: $file"
