@@ -123,23 +123,14 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Download build artifacts for Linux
-              uses: actions/download-artifact@main
+             - name: Download all build artifacts
+              uses: actions/download-artifact@v2
               with:
-                  name: yell0wsuit-blob-opera-ubuntu-latest
-                  path: ./release/linux
+                  path: ./release
 
-            - name: Download build artifacts for macOS
-              uses: actions/download-artifact@main
-              with:
-                  name: yell0wsuit-blob-opera-macos-latest
-                  path: ./release/macos
-
-            - name: Download build artifacts for Windows
-              uses: actions/download-artifact@main
-              with:
-                  name: yell0wsuit-blob-opera-windows-latest
-                  path: ./release/windows
+            - name: Display structure of downloaded files
+              run: ls -R
+              working-directory: ./release
 
             - name: Get latest tag
               id: get_tag
