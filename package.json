@@ -27,6 +27,9 @@
     "optionalDependencies": {
         "appdmg": "latest"
     },
+    "resolutions": {
+        "asar": "@electron/asar"
+    },
     "config": {
         "forge": "./forge.config.js"
     }
