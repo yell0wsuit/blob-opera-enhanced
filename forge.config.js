@@ -2,7 +2,15 @@ module.exports = {
     packagerConfig: {
         icon: "./app/icons/appicon",
         ignore: [
-            "^/((?!(app)).)*$", // Ignore everything in the root directory except the "app" folder
+            "^/\\.github$", // Ignore the .github directory
+            "^/venv$", // Ignore the venv directory
+            "^/node_modules$", // Ignore the node_modules directory
+            "^/\\.vscode$", // Ignore .vscode if exists
+            "^/tests$", // Ignore tests directory if exists
+            "^/scripts$", // Ignore scripts directory if exists
+            "^/.*$", // Ignore any dotfiles (e.g., .gitignore, .eslintrc, etc.)
+            "^/README.md$", // Ignore README.md file
+            "^/package-lock.json$", // Ignore package-lock.json file
         ],
         files: [
             {
