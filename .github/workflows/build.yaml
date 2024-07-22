@@ -191,7 +191,7 @@ jobs:
               id: check
               run: |
                   git fetch origin main
-                  changes=$(git diff --name-only origin/main...HEAD)
+                  changes=$(git diff --name-only HEAD~1)
                   echo "Files changed: $changes"
                   if echo "$changes" | grep -q '^app/'; then
                     echo "Changes detected in the ./app directory."
