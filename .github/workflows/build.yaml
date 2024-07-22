@@ -126,7 +126,7 @@ jobs:
             - name: Download all build artifacts
               uses: actions/download-artifact@main
               with:
-                  path: ./release/blob-opera-*
+                  path: ./release
 
             - name: Display structure of downloaded files
               run: ls -R
