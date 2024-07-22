@@ -199,6 +199,7 @@ jobs:
                   else
                     echo "No changes in the ./app directory."
                     echo "changes_detected=false" >> $GITHUB_ENV
+                  fi
               shell: bash
 
     deploy:
