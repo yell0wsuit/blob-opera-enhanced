@@ -197,11 +197,11 @@ jobs:
                   if echo "$changes" | grep -q '^app/'; then
                     echo "Changes detected in the ./app directory."
                     echo "changes_detected=true" >> $GITHUB_ENV
-                    echo "::set-output name=changes_detected::true"
+                    echo "changes_detected=true" >> $GITHUB_OUTPUT
                   else
                     echo "No changes in the ./app directory."
                     echo "changes_detected=false" >> $GITHUB_ENV
-                    echo "::set-output name=changes_detected::false"
+                    echo "changes_detected=false" >> $GITHUB_OUTPUT
                   fi
               shell: bash
 
