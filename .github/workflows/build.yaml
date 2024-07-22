@@ -191,7 +191,9 @@ jobs:
               id: check
               run: |
                   git fetch origin main
-                  if git diff --name-only origin/main...HEAD | grep -q '^app/'; then
+                  changes=$(git diff --name-only origin/main...HEAD)
+                  echo "Files changed: $changes"
+                  if echo "$changes" | grep -q '^app/'; then
                     echo "Changes detected in the ./app directory."
                     echo "changes_detected=true" >> $GITHUB_ENV
                   else
