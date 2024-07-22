@@ -1,6 +1,16 @@
 module.exports = {
     packagerConfig: {
         icon: "./app/icons/appicon",
+        ignore: [
+            "^/((?!(app)).)*$", // Ignore everything in the root directory except the "app" folder
+        ],
+        files: [
+            {
+                from: "./app",
+                to: "./",
+                filter: ["**/*"],
+            },
+        ],
     },
     makers: [
         /*{
@@ -18,7 +28,7 @@ module.exports = {
             name: "@electron-forge/maker-dmg",
             config: {
                 icon: "./app/icons/appicon-macos.icns", // macOS specific icon
-                format: "ULFO"
+                format: "ULFO",
             },
         },
         {
