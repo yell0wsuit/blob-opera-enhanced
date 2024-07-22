@@ -154,19 +154,17 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  tag_name: ${{ env.latest_tag }}
-                  release_name: Release ${{ env.latest_tag }}
-                  body: |
-                      Release ${{ env.latest_tag }} of the project.
-                  draft: false
-                  prerelease: false
+                  title: ${{ env.latest_tag }}
+
+            - name: Display the release directory structure
+              run: ls -R ./release
 
             - name: Upload Release Assets
               run: |
                   for artifact in ./release/*; do
                     for file in $(find $artifact -type f); do
                       echo "Attempting to upload: $file"
-                      if gh release upload v${{ env.latest_tag }} "$file" --clobber; then
+                      if gh release upload ${{ env.latest_tag }} "$file" --clobber; then
                         echo "Successfully uploaded: $file"
                       else
                         echo "Failed to upload: $file"
