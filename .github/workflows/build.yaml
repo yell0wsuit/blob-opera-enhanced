@@ -190,15 +190,6 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-            - name: Upload ZIP Release Asset
-              run: |
-                  for file in $(find ./release/zip -type f); do
-                    echo "Uploading $file"
-                    gh release upload ${{ env.latest_tag }} "$file" --clobber
-                  done
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     deploy:
         runs-on: ubuntu-latest
         environment:
