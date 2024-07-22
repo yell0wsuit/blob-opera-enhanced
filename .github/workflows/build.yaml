@@ -105,7 +105,14 @@ jobs:
               env:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
 
-            - name: Upload Artifacts
+            - name: Upload Artifacts (macOS)
+              if: matrix.os == 'macos-latest'
+              uses: actions/upload-artifact@v2
+              with:
+                  name: yell0wsuit-blob-opera-${{ matrix.os }}
+                  path: out/make-macos-*/*
+
+            - name: Upload Artifacts (Windows & Linux)
               if: matrix.os != 'macos-latest'
               uses: actions/upload-artifact@v2
               with:
