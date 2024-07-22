@@ -15,9 +15,6 @@ jobs:
         strategy:
             matrix:
                 os: [ubuntu-latest, macos-latest, windows-latest]
-                include:
-                    - os: macos-latest
-                      arch: [x64, arm64]
 
         runs-on: ${{ matrix.os }}
 
@@ -57,12 +54,12 @@ jobs:
               uses: actions/cache@main
               with:
                   path: |
-                      ${{ github.workspace }}/.electron
-                      ${{ github.workspace }}/.cache/electron
-                      ${{ github.workspace }}/.cache/electron-builder
+                    ${{ github.workspace }}/.electron
+                    ${{ github.workspace }}/.cache/electron
+                    ${{ github.workspace }}/.cache/electron-builder
                   key: ${{ runner.os }}-electron-cache-${{ hashFiles('**/package-lock.json') }}
                   restore-keys: |
-                      ${{ runner.os }}-electron-cache-
+                    ${{ runner.os }}-electron-cache-
 
             - name: Install Python virtual environment (macOS only)
               if: matrix.os == 'macos-latest'
@@ -92,18 +89,8 @@ jobs:
             - name: Build Electron app (macOS)
               if: matrix.os == 'macos-latest'
               run: |
-                  source venv/bin/activate
-                  if [ "${{ matrix.arch }}" = "x64" ]; then
-                    npm run make -- --arch=x64
-                    mv out/make out/make-x64
-                  fi
-                  npm run make -- --arch=arm64
-                  if [ "${{ matrix.arch }}" = "x64" ]; then
-                    mv out/make out/make-arm64
-                    mkdir -p out/make
-                    mv out/make-x64 out/make/x64
-                    mv out/make-arm64 out/make/arm64
-                  fi
+                    source venv/bin/activate
+                    npm run make -- --arch="universal"
               env:
                   CSC_IDENTITY_AUTO_DISCOVERY: false
 
@@ -135,28 +122,11 @@ jobs:
                   name: yell0wsuit-blob-opera-ubuntu-latest
                   path: ./release/linux
 
-            - name: Download build artifacts for macOS (x64)
+            - name: Download build artifacts for macOS
               uses: actions/download-artifact@main
               with:
-                  name: yell0wsuit-blob-opera-macos-latest-x64
-                  path: ./release/macos/x64
-
-            - name: Download build artifacts for macOS (arm64)
-              uses: actions/download-artifact@main
-              with:
-                  name: yell0wsuit-blob-opera-macos-latest-arm64
-                  path: ./release/macos/arm64
-
-            - name: Create Universal Binary for macOS
-              run: |
-                  mkdir -p ./release/macos/universal
-                  APP_NAME=$(ls ./release/macos/x64/*.app | head -n 1 | xargs basename)
-                  lipo -create -output "./release/macos/universal/${APP_NAME}/Contents/MacOS/${APP_NAME%.app}" \
-                    "./release/macos/x64/${APP_NAME}/Contents/MacOS/${APP_NAME%.app}" \
-                    "./release/macos/arm64/${APP_NAME}/Contents/MacOS/${APP_NAME%.app}"
-                  cp -R "./release/macos/x64/${APP_NAME}" "./release/macos/universal/"
-                  cp -R "./release/macos/universal/${APP_NAME}/Contents/MacOS/${APP_NAME%.app}" \
-                    "./release/macos/universal/${APP_NAME}/Contents/MacOS/"
+                  name: yell0wsuit-blob-opera-macos-latest
+                  path: ./release/macos
 
             - name: Download build artifacts for Windows
               uses: actions/download-artifact@main

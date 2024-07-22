@@ -18,6 +18,7 @@ module.exports = {
             name: "@electron-forge/maker-dmg",
             config: {
                 icon: "./app/icons/appicon-macos.icns", // macOS specific icon
+                format: "ULFO"
             },
         },
         {
