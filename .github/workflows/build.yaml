@@ -156,7 +156,7 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
                   tag_name: ${{ env.latest_tag }}
-                  name: Release ${{ env.PACKAGE_VERSION }}
+                  name: v${{ env.PACKAGE_VERSION }}
                   body: |
                       Release version ${{ env.PACKAGE_VERSION }} of the project.
 
