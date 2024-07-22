@@ -8,7 +8,7 @@ module.exports = {
             "^/\\.vscode$", // Ignore .vscode if exists
             "^/tests$", // Ignore tests directory if exists
             "^/scripts$", // Ignore scripts directory if exists
-            "^/.*$", // Ignore any dotfiles (e.g., .gitignore, .eslintrc, etc.)
+            "^/\\..*$", // Ignore any dotfiles (e.g., .gitignore, .eslintrc, etc.)
             "^/README.md$", // Ignore README.md file
             "^/package-lock.json$", // Ignore package-lock.json file
         ],
