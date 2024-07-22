@@ -140,7 +140,7 @@ jobs:
                   if [ -z "$latest_tag" ]; then
                     new_tag="v${{ env.PACKAGE_VERSION }}"
                   else
-                    new_tag=$(( ${latest_tag%.*} + 0.1 ))
+                    new_tag=$(( ${latest_tag%.*} + 1 ))
                   fi
                   echo "latest_tag=$new_tag" >> $GITHUB_ENV
 
@@ -156,9 +156,9 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
                   tag_name: ${{ env.latest_tag }}
-                  name: Release ${{ env.latest_tag }}
+                  name: Release ${{ env.PACKAGE_VERSION }}
                   body: |
-                      Release ${{ env.latest_tag }} of the project.
+                      Release version ${{ env.PACKAGE_VERSION }} of the project.
 
             - name: Display the release directory structure
               run: ls -R ./release
