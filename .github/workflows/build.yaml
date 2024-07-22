@@ -15,6 +15,9 @@ jobs:
         strategy:
             matrix:
                 os: [ubuntu-latest, macos-latest, windows-latest]
+                include:
+                    - os: macos-latest
+                      arch: [x64, arm64]
 
         runs-on: ${{ matrix.os }}
 
@@ -54,12 +57,12 @@ jobs:
               uses: actions/cache@main
               with:
                   path: |
-                    ${{ github.workspace }}/.electron
-                    ${{ github.workspace }}/.cache/electron
-                    ${{ github.workspace }}/.cache/electron-builder
+                      ${{ github.workspace }}/.electron
+                      ${{ github.workspace }}/.cache/electron
+                      ${{ github.workspace }}/.cache/electron-builder
                   key: ${{ runner.os }}-electron-cache-${{ hashFiles('**/package-lock.json') }}
                   restore-keys: |
-                    ${{ runner.os }}-electron-cache-
+                      ${{ runner.os }}-electron-cache-
 
             - name: Install Python virtual environment (macOS only)
               if: matrix.os == 'macos-latest'
@@ -89,10 +92,11 @@ jobs:
             - name: Build Electron app (macOS)
               if: matrix.os == 'macos-latest'
               run: |
-                    source venv/bin/activate
-                    npm run make -- --arch="universal"
-              env:
-                  CSC_IDENTITY_AUTO_DISCOVERY: false
+                  for arch in ${{ join(matrix.arch, ' ') }}; do
+                    npm run make -- --arch=$arch
+                    mkdir -p out/make-$arch
+                    mv out/make/* out/make-$arch/
+                  done
 
             - name: Build Electron app (Windows & Linux)
               if: matrix.os != 'macos-latest'
